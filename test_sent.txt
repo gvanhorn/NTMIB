@@ -1,0 +1,1 @@
+(NP (NNP Rolls-Royce) (@NP-> NNP (NNP Motor) (@NP-> NNP NNP (NNPS Cars) (@NP-> NNP NNP NNPS (NNP Inc.)))))
