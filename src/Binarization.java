@@ -32,6 +32,7 @@ public class Binarization {
 				String binarized = binarize(currentLine);
 				bw.write(binarized);
 				currentLine = br.readLine();
+				
 			}
 				
 
@@ -47,18 +48,26 @@ public class Binarization {
 	
 	private static String binarize(String currentLine) {
 		
-		/*
-		 * while(currentLine not binarized)
-		 * 		for(every non terminal in line)
+		/* 
+		 *for(every non-terminal in line)
 		 * 			if non terminal has more than 2 children,
-		 * 				binarize(Non terminal and its children)
+		 * 				newSymbol = create new nonterminal symbol as: @{Parent} -> {symbol for previous nonterminal}
+		 * 				add non-terminal as child newSymbol
+		 * 				add the rest of the children of non-terminal to newSymbol.
+		 * 				editedLine = replace non-terminal in currentLine with newSymbol.
+		 * 				binarize(editedLine)
 		 * 			else
 		 * 				do nothing
+		 * 
+		 * When the loop is escaped that means that none of the nonterminals has more than 2 children, so we can return currentLine;
+		 * return currentLine;
 		 */
 		
 		
 		return null;
 	}
+	
+
 
 }
 
