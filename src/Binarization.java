@@ -63,8 +63,18 @@ public class Binarization {
 		 * return currentLine;
 		 */
 		
+		String[] splitLine = currentLine.split(" ");
+		
 		
 		return null;
+	}
+	
+	private static boolean nonTerminal(String s){
+		if(s.charAt(0) == '('){
+			return true;
+		}else{
+			return false;
+		}
 	}
 	
 
